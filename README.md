@@ -32,10 +32,7 @@ To use the _FlashMessageModule_ in your app, only required step is to add ```<jj
 >```<jjwins-flash-message></jjwins-flash-message>```
 
 **To add flash message and styling use property binding**
-- jjwins-angular-12-flash-message has a message property which can be attached to the html tag 
-```
-<jjwins-flash-message></jjwins-flash-message>
-``` 
+- jjwins-angular-12-flash-message has a message property which can be attached to the html tag ```<jjwins-flash-message></jjwins-flash-message>``` 
     - add [message] property to the ```<jjwins-flash-message></jjwins-flash-message>``` html tag and the property takes any property value from your component.ts file
         - eg: 
         >app.component.ts
@@ -46,9 +43,7 @@ To use the _FlashMessageModule_ in your app, only required step is to add ```<jj
         ```
 
         >app.component.html
-        ``` 
-        <jjwins-flash-message [message]="flashMessage" ><?jjwins-flash-message> 
-        ```
+        >``` <jjwins-flash-message [message]="flashMessage" ><?jjwins-flash-message> ```
     
     - To add styles you only have to make alert flags true, there are alert flags corresponding to the bootstrap alert classes.
         
