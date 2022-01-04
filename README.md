@@ -62,5 +62,5 @@ To use the _FlashMessageModule_ in your app, only required step is to add ```<jj
 
         >Note: If the [timeOut] property is not set the flash message will have a close button to close the flashed message
 
-    - Background graying out can be set by setting the property [grayOut] to true
+    - Background graying out can be achieved by setting the property [grayOut] to true
             - eg: ` <jjwins-flash-message [grayOut]="true" [message]="flashMessage" [alertWarning]="true ><?jjwins-flash-message> `
