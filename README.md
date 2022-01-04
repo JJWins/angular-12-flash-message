@@ -1,67 +1,27 @@
-## Requirement
-- NPM - node package manager
-- Bootstrap v5.x
+# FlashMessage
 
----
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
-## Installation
-- npm install jjwins-angular-12-flash-message
+## Development server
 
----
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Importing
-Import _FlashMessageModule_ from _jjwins-angular-12-flash-message_ in your app.module.ts file and add _FlashMessageModule_ to the imports array
+## Code scaffolding
 
-``` 
-import { FlashMessageModule } from 'jjwins-angular-12-flash-message';
- 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-imports: [ 
-... 
-FlashMessageModule,
-...
-],
-```
----
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Usage
+## Running unit tests
 
-To use the _FlashMessageModule_ in your app, only required step is to add ```<jjwins-flash-message></jjwins-flash-message>``` tag to your component html file
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
->app.component.html
->```<jjwins-flash-message></jjwins-flash-message>```
+## Running end-to-end tests
 
-**To add flash message and styling use property binding**
-- jjwins-angular-12-flash-message has a message property which can be attached to the html tag ```<jjwins-flash-message></jjwins-flash-message>``` 
-    **[message] is a required property**
-    - add [message] property to the ```<jjwins-flash-message></jjwins-flash-message>``` html tag and the property takes any property value from your component.ts file
-        - eg: 
-        >app.component.ts
-        ``` 
-        export class AppComponent { 
-        flashMessage = "Message you want to add"
-        }
-        ```
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-        >app.component.html
-        >``` <jjwins-flash-message [message]="flashMessage" ></jjwins-flash-message> ```
-    
-    - To add styles you only have to make alert flags true, there are alert flags corresponding to the bootstrap alert classes.
-        
-        - eg: the flag corresponding to bootstrap class _alert-warning_ is [alertWarning] providing true to [alertWarning] will apply _alert-warning_ bootstrap style
-    
-    - Available flags are [alertPrimary], [alertSecondry], [alertSuccess], [alertDanger], [alertWarning], [alertInfo], [alertLight], [alertDark]
+## Further help
 
-    - Usage of flag 
-    >app.component.html
-    ``` <jjwins-flash-message [message]="flashMessage" [alertWarning]="true ><?jjwins-flash-message> ```
-
-    **Optional properties**
-    - Flash message can set to disappear after a period of time by setting the proprty [timeout] to any value of milliseconds
-        - eg: ` <jjwins-flash-message [timeOut]="2000" [message]="flashMessage" [alertWarning]="true"><?jjwins-flash-message> ` the flash message will disappear after 2 seconds.
-
-        >Note: If the [timeOut] property is not set the flash message will have a close button to close the flashed message
-
-    - Background graying out can be set by setting the property [grayOut] to true
-            - eg: ` <jjwins-flash-message [grayOut]="true" [message]="flashMessage" [alertWarning]="true ><?jjwins-flash-message> `
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
