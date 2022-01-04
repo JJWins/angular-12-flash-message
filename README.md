@@ -43,7 +43,7 @@ To use the _FlashMessageModule_ in your app, only required step is to add ```<jj
         ```
 
         >app.component.html
-        >``` <jjwins-flash-message [message]="flashMessage" ><?jjwins-flash-message> ```
+        >``` <jjwins-flash-message [message]="flashMessage" ></jjwins-flash-message> ```
     
     - To add styles you only have to make alert flags true, there are alert flags corresponding to the bootstrap alert classes.
         
