@@ -57,10 +57,10 @@ To use the _FlashMessageModule_ in your app, only required step is to add ```<jj
     ``` <jjwins-flash-message [message]="flashMessage" [alertWarning]="true ><?jjwins-flash-message> ```
 
     **Optional properties**
-        - Flash message can set to disappear after a period of time by setting the proprty [timeout] to any value of milliseconds
-            - eg: ` <jjwins-flash-message [timeOut]="2000" [message]="flashMessage" [alertWarning]="true"><?jjwins-flash-message> ` the flash message will disappear after 2 seconds.
+    - Flash message can set to disappear after a period of time by setting the proprty [timeout] to any value of milliseconds
+        - eg: ` <jjwins-flash-message [timeOut]="2000" [message]="flashMessage" [alertWarning]="true"><?jjwins-flash-message> ` the flash message will disappear after 2 seconds.
 
-            >Note: If the [timeOut] property is not set the flash message will have a close button to close the flashed message
+                >Note: If the [timeOut] property is not set the flash message will have a close button to close the flashed message
 
-        - Background graying out can be set by setting the property [grayOut] to true
+    - Background graying out can be set by setting the property [grayOut] to true
             - eg: ` <jjwins-flash-message [grayOut]="true" [message]="flashMessage" [alertWarning]="true ><?jjwins-flash-message> `
